@@ -77,7 +77,7 @@ p.mhl a{color:#fafafa}
 .about_wrap .abouts dd{font-size:15px;line-height: 26px}
 .about_wrap .contest dt{font-size:27px;font-weight:600;margin:30px 0 10px 0}
 .about_wrap .contest dd{font-size:15px;line-height: 26px;margin:8px 0 60px 0}
-.about_wrap .setting dt{font-size:27px;font-weight:600;margin:30px 0 10px 0;color:#455ede}
+.about_wrap .setting dt,.about_wrap .code_lst h3{font-size:27px;font-weight:600;margin:30px 0 10px 0;color:#455ede}
 .about_wrap .setting dd{font-size:15px;line-height: 26px}
 .about_wrap .aboutus dt{font-size:27px;font-weight:600;margin:30px 0 10px 0;color:#455ede}
 .about_wrap .aboutus dd{font-size:15px;line-height: 26px}
@@ -91,10 +91,29 @@ p.mhl a{color:#fafafa}
 .about_wrap .about_info .info_lst .info_content .info_detail .detail_tit .box_txt{display:inline-block;min-height:16px;padding:4px 4px 4px 4px;background-color: #f7f7f7; border:solid 1px #eee;border-radius: 2px; line-height:16px;vertical-align:middle}
 .about_wrap .about_info .info_lst .info_content .info_detail .code_box_area{padding-left:20px}
 .about_wrap .about_info .info_lst .info_content .info_detail .code_box_area .code_box span{font-size:15px;color:#333}
-.about_wrap .about_info .info_lst .info_content .info_detail .code_box_area .code_box{min-height:28px;margin:8px 0 16px 0;padding:0 5px;border:solid 1px #c4c9e8;border-radius: 2px; background-color:#e7e9f5;font-size:15px;line-height:28px;word-break:break-all}
+.about_wrap .about_info .info_lst .info_content .info_detail .code_box_area .code_box,.about_wrap .code_lst .code_box_area .code_box{min-height:28px;margin:8px 0 16px 0;padding:0 5px;border:solid 1px #c4c9e8;border-radius: 2px; background-color:#e7e9f5;font-size:15px;line-height:28px;word-break:break-all}
 .about_wrap .about_info .info_lst .info_content .info_detail .code_box_area .code_box_txt{display:block;margin-top:5px;font-size:15px;}
 .about_wrap .section{padding:0 20px}
 .about_wrap .section ul{padding:0}
+
+.about_wrap .code_lst{font-size:15px}
+.about_wrap .code_lst h3{border-bottom:1px solid #eee}
+.about_wrap .code_lst>li{position:relative;overflow: hidden}
+.about_wrap .code_lst>li .git_area{position:absolute;right:0;top:37px}
+.about_wrap .code_lst>li .git_area a{margin-left:10px;color:#666}
+.about_wrap .col{float:left}
+.about_wrap .left{width:25%}
+.about_wrap .right{width:75%}
+.about_wrap .code_lst>li .left>div{margin-right:15px} 
+.about_wrap .code_lst>li .left>div>p{line-height:25px}
+.about_wrap.xe_icon_wrap .spot{padding-left:0}
+.about_wrap .lst_grup{border:1px solid #ccc;border-radius:10px}
+.about_wrap .lst_grup li{padding:7px 0 7px 5px;border-bottom:1px solid #ccc}
+.about_wrap .lst_grup li:last-child{border-bottom:none}
+.about_wrap .lst_row{overflow:hidden}
+.about_wrap .lst_row li{float:left;width:50px;height:45px;margin-right:3px;border:1px solid #c1c1c1;border-radius:10px;text-align:center;font-size:26px}
+.about_wrap .lst_row li i{vertical-align:middle}
+.about_wrap .lst_rotate i{margin-right:7px;font-size:25px}
 
 @media(max-width: 767px){
 .bgc1,.bgc2{text-align:center}  
@@ -105,11 +124,19 @@ p.mhl a{color:#fafafa}
 .xe_icon_gnb .menu_lst{float:none;width:260px;margin:0 auto}
 .xe_icon_gnb .menu_lst li{margin-left:15px}
 .xe_icon_gnb .menu_lst li:first-child{margin-left:0}
+.about_wrap .left,.about_wrap .right{float:none;width:auto;margin-bottom:30px}
 }
 
 @media(min-width: 480px){
 .mhmm,.ptl,.mhl,.gnb_area,.container{width:466px}
 .glyph{width:33.33333333%}
+
+}
+
+@media(max-width: 480px){
+.about_wrap .code_lst>li .left>div,.about_wrap .code_lst>li .code_box_area,.about_wrap .code_lst>li .right>p,.xe_icon_wrap .spot p{margin:0 15px} 
+.about_wrap .code_lst>li .git_area{display:none}
+.about_wrap .code_lst>li h3,.xe_icon_wrap .license_tit{padding-left:15px}
 }
 
 @media(min-width: 768px){
@@ -118,6 +145,9 @@ p.mhl a{color:#fafafa}
 
 .xe_icon_gnb .gnb_right{margin-right:0}
 .xe_icon_gnb .menu_lst li,.xe_icon_gnb .menu_lst li:first-child{margin-left:15px}
+.about_wrap .left{width:35%}
+.about_wrap .right{width:65%}
+    
 }
 
 @media(min-width: 992px){
@@ -126,6 +156,9 @@ p.mhl a{color:#fafafa}
 
 .xe_icon_gnb .gnb_right{margin-right:0}
 .xe_icon_gnb .menu_lst li,.xe_icon_gnb .menu_lst li:first-child{margin-left:15px}
+.about_wrap .left{width:25%}
+.about_wrap .right{width:75%}
+
 }
 
 @media(min-width: 1200px){
