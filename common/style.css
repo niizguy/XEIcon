@@ -1962,6 +1962,11 @@ i {
   -webkit-animation: xe-spin 1s infinite steps(8);
   animation: xe-spin 1s infinite steps(8);
 }
+.xe-pulse2 {
+  -webkit-animation: xe-spin 1s infinite steps(12);
+  animation: xe-spin 1s infinite steps(12);
+}
+
 @-webkit-keyframes xe-spin {
   0% {
     -webkit-transform: rotate(0deg);
